@@ -106,6 +106,12 @@ export default function Header() {
             >
               Nosotros
             </Link>
+            <Link
+              href="/preguntas-frecuentes"
+              className="text-slate-300 hover:text-white transition-colors"
+            >
+              FAQ
+            </Link>
           </nav>
 
           <div className="hidden lg:flex items-center gap-4">

@@ -36,6 +36,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: `${BASE_URL}/preguntas-frecuentes`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
       url: `${BASE_URL}/metodologia`,
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
