@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Toaster } from "sonner";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -16,6 +17,12 @@ export const metadata: Metadata = {
     "diseño web",
     "México",
   ],
+  authors: [{ name: "Creappsy" }],
+  openGraph: {
+    type: "website",
+    locale: "es_MX",
+    siteName: "Creappsy",
+  },
 };
 
 export default function RootLayout({
@@ -25,7 +32,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es-MX" className="scroll-smooth">
-      <body className="min-h-screen bg-slate-950 antialiased">{children}</body>
+      <body className="min-h-screen bg-slate-950 antialiased">
+        {children}
+        <Toaster position="bottom-right" richColors />
+      </body>
     </html>
   );
 }
