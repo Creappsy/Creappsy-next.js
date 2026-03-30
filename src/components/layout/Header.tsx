@@ -83,16 +83,22 @@ export default function Header() {
             </div>
 
             <Link
+              href="/solutions"
+              className="text-slate-300 hover:text-white transition-colors"
+            >
+              Soluciones
+            </Link>
+            <Link
+              href="/demos"
+              className="text-slate-300 hover:text-white transition-colors"
+            >
+              Demos
+            </Link>
+            <Link
               href="/precios"
               className="text-slate-300 hover:text-white transition-colors"
             >
               Precios
-            </Link>
-            <Link
-              href="/metodologia"
-              className="text-slate-300 hover:text-white transition-colors"
-            >
-              Metodología
             </Link>
             <Link
               href="/nosotros"
