@@ -8,28 +8,36 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "test:ci": "node scripts/test-ci.js"
   },
   "dependencies": {
+    "@auth/prisma-adapter": "^2.11.1",
+    "@prisma/client": "^5.22.0",
     "@types/node": "^22.0.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "autoprefixer": "^10.4.27",
+    "bcryptjs": "^3.0.3",
     "clsx": "^2.1.1",
+    "dotenv": "^17.3.1",
     "framer-motion": "^12.0.0",
     "lucide-react": "^0.500.0",
     "next": "^15.0.0",
+    "next-auth": "^5.0.0-beta.30",
     "postcss": "^8.5.8",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "sonner": "^1.7.0",
+    "stripe": "^21.0.1",
     "tailwind-merge": "^2.6.0",
     "tailwindcss": "^3.4.0",
     "typescript": "^5.0.0",
-    "zod": "^3.23.0"
+    "zod": "^3.25.76"
   },
   "devDependencies": {
     "eslint": "^9.0.0",
-    "eslint-config-next": "^15.0.0"
+    "eslint-config-next": "^15.0.0",
+    "prisma": "^5.22.0"
   }
 }
