@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Menu, X, ChevronDown } from "lucide-react";
+import { RegionSelector } from "@/components/ui/RegionSelector";
 
 const services = [
   { name: "Desarrollo Web", href: "/servicios/desarrollo-web" },
@@ -112,6 +113,7 @@ export default function Header() {
             >
               FAQ
             </Link>
+            <RegionSelector />
           </nav>
 
           <div className="hidden lg:flex items-center gap-4">

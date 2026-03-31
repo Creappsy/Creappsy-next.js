@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Toaster } from "sonner";
 import "./globals.css";
+import { SessionProvider } from "next-auth/react";
 
 export const metadata: Metadata = {
   metadataBase: new URL(
@@ -74,7 +75,7 @@ export default function RootLayout({
   return (
     <html lang="es-MX" className="scroll-smooth">
       <body className="min-h-screen bg-slate-950 antialiased">
-        {children}
+        <SessionProvider>{children}</SessionProvider>
         <Toaster position="bottom-right" richColors />
       </body>
     </html>

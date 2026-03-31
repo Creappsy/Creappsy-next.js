@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { ArrowRight, Zap, Palette, TrendingUp, Bot } from "lucide-react";
+import { signIn } from "next-auth/react";
+import { useState } from "react";
 
 const services = [
   {
